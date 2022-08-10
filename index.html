@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Adrifter</title>
+    <script src="script.js"></script>
+    
+</head>
+<body onscroll="scrolle()">
+    <header>
+        <div class="main-header">
+            <a href="#" class="logo">Adrift</a>
+            <nav class="navigation">
+                <span class="hover" style="margin: 0px 20px;">
+                    
+                    <a href="#services" onmouseover="start(0)" onmouseleave="end(0)">Services</a>
+                    <div id="hover-services" class="hover-bg"></div>
+                </span>
+                <span class="hover">
+                    <a href="#skills" onmouseover="start(1)" onmouseleave="end(1)">Skills</a>
+                    <div id="hover-skills" class="hover-bg"></div>
+                </span>
+                <span class="hove">
+                    <a href="#about" onmouseover="start(2)" onmouseleave="end(2)">About</a>
+                    <div id="hover-about" class="hover-bg"></div>
+                </span>
+            </nav>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </div>
+        <div class="bg">
+            <i class="fas fa-bolt"></i>
+            <i class="fas fa-bolt"></i>
+        </div>
+    </header>
+    <div class="main-background">
+        <section class="main">
+            <div class="bg-color"> 
+                <h2>Welcome To Me A</h2>
+                <div class="sk">
+                    <h1 class="side-title front">Front-End Dev</h1>
+                    <!-- <h1 class="side-title motion">motion Graphics</h1> -->
+                </div>
+                <h3>I make Web Pages</h3>
+                <div id="social" style="margin:100px 0px">
+                    <div id="social-icons">
+                        <a onmouseover="showytname(1)" onmouseleave="showytname(0)" href="https://www.youtube.com/channel/UC1hLMnR9DRiQNTU-KpR8hQQ" target="_blank"><i class="fab fa-youtube yticon"></i></a>
+                        <a onmouseover="showghname(1)"  onmouseleave="showghname(0)" href="https://github.com/WESTPOLD/" target="_blank"><i class="fab fa-github ghicon"></i></a>
+                        <a href="https://www.linkedin.com/in/salaheddine-jabri-b99333229/" target="_blank" ><i class="fab fa-linkedin liicon" ></i></a>
+                        
+                    </div>
+                    <div class="names">
+                        <h3 id="leto-text">Leto</h3>
+                        <h3 id="multi-text">WESTPOLD</h3>
+                    </div>
+                    <i onclick="movesocial()" class="fas fa-chevron-left left-icon" id="lefti"></i>
+                </div>
+                <div class="slider">
+                     
+                </div>
+                <!-- <canvas id="bg"></canvas> -->
+                
+            </div>
+        </section>
+    </div>
+    <div class="background">
+        <section class="cards" id="services">
+            <h2 class="title">Services</h2>
+            <div class="content">
+                <div class="card">
+                    <div class="icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="info">
+                        <h2>A Programmer</h2><br>
+                        <ul style="font-size: 1em;">
+                            <li>Make Responsive Sites</li>
+                            <li>Automate Stuff With Python</li>
+                            <li>Make Windows Software With <b>C#</b></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="icon">
+                        <i class="fas fa-file-image"></i>
+                    </div>
+                    <div class="info">
+                        <h2>A Designer</h2><br>
+                        <ul style="font-size: 1em;">
+                            <li>Make Logos</li>
+                            <li>Make Buisiness Cards</li>  
+                            <li>Edit Images</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <div class="info">
+                        <h2>A Video Editor</h2><br>
+                        <ul style="font-size: 1em;">
+                            <li>Edit videos ...</li>
+                            <li>Make Educational Videos</li>  
+                            <li>Make Intros/Outro For A Video</li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+    </div>
+    
+    <section class="skills" id="skills">
+      <h2 class="title" id="skills">Skills</h2>
+      <div class="content skill-content">
+            <div class="card-s">
+                <fieldset>
+                    <legend class="test" >Programming</legend>
+                    <div class="web">
+                        <h3>Frontend Development </h3>
+                        <div class="wbar">
+                            <div id="frontend" class="bar"></div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="Python">
+                        <h3>Mobile Development</h3>
+                        <div class="wbar">
+                            <div id="mobilebar" class="bar"></div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="C_Cpp">
+                        <h3>Desktop Development C#</h3>
+                        <div class="wbar">
+                            <div id="dekstopbar"  class="bar"></div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="C_Cpp">
+                        <h3>Automation With Python</h3>
+                        <div class="wbar">
+                            <div id="automatebar" class="bar"></div>
+                        </div>
+                    </div>
+                </fieldset> 
+            </div>
+            <div class="card-s">
+                <fieldset>
+                    <legend class="test">interpersonal </legend>
+                    <div class="problem-solving">
+                        <h3>Problem Solving</h3>
+                        <div class="wbar">
+                            <div id="problembar" class="bar"></div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="Listening">
+                        <h3>Active Listening</h3>
+                        <div class="wbar">
+                            <div id="activebar" class="bar"></div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="Communication">
+                        <h3>Communication</h3>
+                        <div class="wbar">
+                            <div id="combar"  class="bar"></div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="teamwork">
+                        <h3>TeamWork</h3>
+                        <div class="wbar">
+                            <div id="teambar"  class="bar"></div>
+                        </div>
+                    </div>
+                </fieldset> 
+            </div>
+            <div class="card-s">
+                <fieldset>
+                    <legend class="test">Motion Graphics     </legend>
+                    <div class="after-effects">
+                        <h3>Adobe After Effects</h3>
+                        <div class="wbar">
+                            <div id="aebar" class="bar"></div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="Premier-pro">
+                        <h3>Adobe Premier Pro</h3>
+                        <div class="wbar">
+                            <div id="ppbar" class="bar"></div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="photoShop">
+                        <h3>Adobe PhotoShop</h3>
+                        <div class="wbar">
+                            <div id="psbar"  class="bar"></div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="cinema4d">
+                        <h3>Cinema4D</h3>
+                        <div class="wbar">
+                            <div id="c4bar"  class="bar"></div>
+                        </div>
+                    </div>
+                </fieldset> 
+            </div>
+            <div class="card-s">
+                <fieldset>
+                    <legend class="test lang-text">Languages</legend>
+                    <div class="english">
+                        <h3>English</h3>
+                        <div class="wbar">
+                            <div id="englishbar" class="bar"></div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="german">
+                        <h3>German</h3>
+                        <div class="wbar">
+                            <div id="germanbar" class="bar"></div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="arabic">
+                        <h3>Arabic</h3>
+                        <div class="wbar">
+                            <div id="arabicbar"  class="bar"></div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="fremsh">
+                        <h3>Frensh</h3>
+                        <div class="wbar">
+                            <div id="frenshbar"  class="bar"></div>
+                        </div>
+                    </div>
+                </fieldset> 
+            </div>
+      </div>
+    </section>
+    <div class="about-background">
+        <section class="about" id="about">
+            <h2>About</h2>
+            <div class="about-me">
+                <p class="descp">
+                    <br>
+                    Hello there I am Youness El-Carti<br>
+                    a beginner web developper and motion graphics designer<br>
+                    I enjoy doing the two<br>
+                    I am looking forward to getting into 
+                    <b style="color:#5694c7;">computer vision </b>
+                    and 
+                    <b style="color:#5694c7;"> cybersecurity</b>     
+                </p>
+                <img src="techbg.jpg" width="50%">
+                
+            </div>
+        </section>
+    </div>
+    <footer>
+      
+    </footer>
+    <!-- <script type="module" src="main.js"></script> -->
+</body>
+</html>
